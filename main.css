@@ -1,20 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body {
-  font-family: "Courier New", Courier, monospace;
-  /* line-height: 1.25em; */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.25em;
   font-size: 18px;
-}
-
-h1 {
-  --font-size: 2em;
-}
-
-h2 {
-  --font-size: 2em;
-  color: darkgrey;
-}
-
-h3 {
-  color: grey
 }
 
 :root {
@@ -26,4 +16,32 @@ h3 {
   --number-of-columns: 4;
   --golden-ratio: 1.618;
 }
-4
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+  color: #222;
+}
+
+h3 {
+  font-weight: 500;
+  color: #333;
+}
+
+h4 {
+  font-weight: 400;
+  color: grey;
+}
+
+h5 {
+  font-weight: 300;
+  color: darkgrey;
+}
+
+h6 {
+  font-weight: 200;
+  color: lightgray;
+}
