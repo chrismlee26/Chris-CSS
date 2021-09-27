@@ -1,23 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&family=Playfair+Display:ital@1&display=swap");
 
-/* Typefaces */
 body {
   font-family: "Oswald", sans-serif;
   line-height: 1.25em;
   font-size: 18px;
   letter-spacing: 0.05em;
+  box-sizing: border-box;
+  margin: 10%;
+  color: white;
+
+  /* Purple/Red+Blue */
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #89253e,
+    #3a6186
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #89253e,
+    #3a6186
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-:root {
-  --color: red;
-  --primary-color: rgba(123, 37, 44, 0.7);
-  --size: 121px;
-  --base-font-size: 16px;
-  --large-font-size: 1.85em;
-  --number-of-columns: 4;
-  --golden-ratio: 1.618;
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
+.navbar > ul {
+  list-style-type: none;
+}
+
+.navbar > ul > li > a {
+  text-decoration: none;
+}
+
+.navbar > ul > li > a:active,
+.navbar > ul > li > a:hover {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+/* Typefaces */
 h1 {
   font-weight: 700;
 }
@@ -45,32 +72,4 @@ h5 {
 h6 {
   font-weight: 200;
   color: lightgray;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-direction: column;
-}
-
-.navbar > ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.navbar > ul > li > a {
-  text-decoration: none;
-  color: black;
-}
-
-.navbar > ul > li > a:active,
-.navbar > ul > li > a:hover {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: larger;
 }
