@@ -210,6 +210,10 @@ button:hover {
   cursor: pointer;
 }
 /* Forms */
+#forms > label {
+  display: flex;
+}
+
 form {
   display: flex;
   flex-direction: column;
