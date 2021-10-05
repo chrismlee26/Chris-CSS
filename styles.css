@@ -1,9 +1,9 @@
 html {
-  box-shadow: inset 0px 0px 100px 10px #111;
+  /* box-shadow: inset 0px 0px 100px 10px #111; */
+  /* box-shadow: inset 0px 0px 100px 10px black; */
 }
 
 body {
-  font-family: "Oswald", sans-serif;
   letter-spacing: 0.05em;
   font-size: 18px;
   color: white;
@@ -14,8 +14,8 @@ body {
 /* Logo */
 .logo {
   position: fixed;
-  top: 2.5%;
-  left: 5%;
+  top: 0%;
+  left: 2.5%;
 }
 
 .title {
@@ -25,7 +25,7 @@ body {
 
 /* Navbar */
 .navbar {
-  top: 5%;
+  top: 2%;
   position: fixed;
   width: 80%;
 }
@@ -52,12 +52,16 @@ body {
 /* Sidebar */
 .sidebar {
   position: fixed;
-  top: 15%;
+  top: 20%;
   left: 1%;
 }
 
 .sidebar > ul {
   list-style-type: none;
+}
+
+.sidebar > ul > li {
+  padding-bottom: 10px;
 }
 
 .sidebar > ul > li > a {
@@ -71,6 +75,27 @@ body {
   color: white;
   font-size: larger;
   cursor: pointer;
+}
+
+.hr-primary {
+  border: 1px solid #555;
+  width: 100%;
+}
+
+.hr-secondary {
+  border: 1px solid #222;
+  width: 100%;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 10em;
+}
+
+.heading-helper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 /* Typefaces */
@@ -102,6 +127,9 @@ h6 {
   color: lightgray;
 }
 
+#typography {
+}
+
 button {
   background-color: rgba(88, 80, 236);
   color: white;
@@ -110,8 +138,10 @@ button {
   padding: 1em;
   font-weight: 400;
   font-size: larger;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: rgba(90, 103, 216);
+  cursor: pointer;
 }
