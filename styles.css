@@ -11,6 +11,18 @@ body {
   background: #111;
 }
 
+.upper-block {
+  background: black;
+  position: fixed;
+  top: -2%;
+  height: 10.5%;
+  width: 105%;
+  left: -5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  opacity: 90%;
+}
+
 /* Logo */
 .logo {
   position: fixed;
@@ -77,8 +89,9 @@ body {
   cursor: pointer;
 }
 
+/* Dividers */
 .hr-primary {
-  border: 1px solid #555;
+  border: 1px solid #888;
   width: 100%;
 }
 
@@ -87,9 +100,15 @@ body {
   width: 100%;
 }
 
+/* Spacer Tabs */
 .tab {
   display: inline-block;
   margin-left: 10em;
+}
+
+.tab2 {
+  display: inline-block;
+  margin-left: 100px;
 }
 
 .heading-helper {
@@ -127,13 +146,20 @@ h6 {
   color: lightgray;
 }
 
+p {
+  color: white;
+  font-size: 12;
+}
+
 #typography {
 }
 
 button {
-  background-color: rgba(88, 80, 236);
+  background-color: #111;
+  /* background-color: rgba(88, 80, 236); */
   color: white;
-  border: none;
+  border: 2px solid rgba(88, 80, 236);
+  /* border: none; */
   border-radius: 8%;
   padding: 1em;
   font-weight: 400;
@@ -143,5 +169,32 @@ button {
 
 button:hover {
   background-color: rgba(90, 103, 216);
+  cursor: pointer;
+}
+
+.page-footer {
+  position: relative;
+  bottom: 8%;
+  width: 80%;
+  font-size: 8px;
+}
+
+.page-footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  letter-spacing: none;
+}
+
+.page-footer > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-footer > ul > li > a:active,
+.page-footer > ul > li > a:hover {
+  text-decoration: none;
+  color: indigo;
   cursor: pointer;
 }
