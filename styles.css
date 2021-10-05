@@ -1,3 +1,18 @@
+:root {
+  /* --color-background: #111;
+  --color-foreground: white;
+  --color-dark: red;
+  --color-light: blue;
+  --color-md-light: #777;
+  --color-md-dark: #444;
+  --color-primary: green;
+  --color-info: yellow;
+  --color-success: indigo;
+  --color-danger: darkred;
+  --color-warning: brown;
+  --color-lightest: #999; */
+}
+
 html {
   /* box-shadow: inset 0px 0px 100px 10px #111; */
   /* box-shadow: inset 0px 0px 100px 10px black; */
@@ -189,6 +204,22 @@ p {
 }
 
 #typography {
+}
+
+/* Colors */
+#colors {
+  /* --color-background: #111;
+  --color-foreground: white;
+  --color-dark: red;
+  --color-light: blue;
+  --color-md-light: #777;
+  --color-md-dark: #444;
+  --color-primary: green;
+  --color-info: yellow;
+  --color-success: indigo;
+  --color-danger: darkred;
+  --color-warning: brown;
+  --color-lightest: #999; */
 }
 
 /* Buttons */
