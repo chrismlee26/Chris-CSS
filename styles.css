@@ -1,0 +1,117 @@
+html {
+  box-shadow: inset 0px 0px 100px 10px #111;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: white;
+  padding: 10%;
+  background: #111;
+}
+
+/* Logo */
+.logo {
+  position: fixed;
+  top: 2.5%;
+  left: 5%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 4em;
+}
+
+/* Navbar */
+.navbar {
+  top: 5%;
+  position: fixed;
+  width: 80%;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar > ul > li > a:active,
+.navbar > ul > li > a:hover {
+  text-decoration: none;
+  color: indigo;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 15%;
+  left: 1%;
+}
+
+.sidebar > ul {
+  list-style-type: none;
+}
+
+.sidebar > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar > ul > li > a:active,
+.sidebar > ul > li > a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
+
+/* Typefaces */
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+  color: #333;
+}
+
+h4 {
+  font-weight: 300;
+  color: grey;
+}
+
+h5 {
+  font-weight: 300;
+  color: darkgrey;
+}
+
+h6 {
+  font-weight: Extra-Light 300;
+  color: lightgray;
+}
+
+button {
+  background-color: rgba(88, 80, 236);
+  color: white;
+  border: none;
+  border-radius: 8%;
+  padding: 1em;
+  font-weight: 400;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: rgba(90, 103, 216);
+}
