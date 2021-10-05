@@ -28,6 +28,34 @@ body {
   position: fixed;
   top: 0%;
   left: 2.5%;
+  cursor: pointer;
+}
+
+.logo:hover {
+  -webkit-animation: spin 5s infinite;
+  animation: spin 5s infinite;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
 }
 
 .title {
@@ -52,20 +80,25 @@ body {
 .navbar > ul > li > a {
   text-decoration: none;
   color: white;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 10%;
 }
 
 .navbar > ul > li > a:active,
 .navbar > ul > li > a:hover {
   text-decoration: none;
-  color: indigo;
+  color: black;
+  background-color: white;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Sidebar */
 .sidebar {
   position: fixed;
   top: 20%;
-  left: 1%;
+  left: 0%;
 }
 
 .sidebar > ul {
@@ -73,20 +106,24 @@ body {
 }
 
 .sidebar > ul > li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .sidebar > ul > li > a {
   text-decoration: none;
   color: white;
+  padding: 8px 12px;
+  border: 1px hidden #111;
+  border-radius: 10%;
 }
 
 .sidebar > ul > li > a:active,
 .sidebar > ul > li > a:hover {
   text-decoration: none;
-  color: white;
-  font-size: larger;
+  color: black;
+  background-color: white;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Dividers */
