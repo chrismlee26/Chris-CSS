@@ -232,6 +232,13 @@ form > label > textarea {
   border-radius: 2%/8%;
 }
 
+/* Checkbox */
+
+/* Upload */
+#upload > form > input {
+  display: flex;
+}
+
 /* Footer */
 .page-footer {
   position: relative;
@@ -254,7 +261,7 @@ form > label > textarea {
 .page-footer > ul > li > a,
 .page-footer > ul > li > p {
   text-decoration: none;
-  color: white;
+  color: #777;
 }
 
 .page-footer > ul > li > a:active,
