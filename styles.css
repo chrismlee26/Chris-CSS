@@ -210,10 +210,6 @@ button:hover {
   cursor: pointer;
 }
 /* Forms */
-#forms > label {
-  display: flex;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -224,9 +220,16 @@ textarea {
   color: white;
   background-color: #111;
   border: 2px solid rgba(88, 80, 236);
-  border-radius: 5%;
-  padding: 1em;
+  border-radius: 2%/8%;
+  padding: 1em 15em 1em 1em;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+form > label > textarea {
+  padding: 1em 50em 10em 1em;
+  border-radius: 2%/8%;
 }
 
 /* Footer */
