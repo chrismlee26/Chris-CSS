@@ -1,33 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Oswald:wght@300;500&family=Playfair+Display:wght@400;800&display=swap");
+
 :root {
-  /* --color-background: #111;
+  --color-background: #111;
   --color-foreground: white;
   --color-dark: red;
   --color-light: blue;
-  --color-md-light: #777;
-  --color-md-dark: #444;
-  --color-primary: green;
+  --color-md-light: #888;
+  --color-md-dark: black;
+  --color-primary: rgba(88, 80, 236);
+  --color-primary2: rgba(90, 103, 216);
   --color-info: yellow;
   --color-success: indigo;
   --color-danger: darkred;
   --color-warning: brown;
-  --color-lightest: #999; */
+  --color-lightest: #999;
+  --color-secondary: #222;
+  --color-footer: #777;
+  --font-h1: "Playfair Display", serif;
+  --font-h2: "Oswald", sans-serif;
+  --font-h3: "Inter", sans-serif;
+  --font-h4: "Playfair Display", serif;
+  --font-h5: "Oswald", sans-serif;
+  --font-h6: "Inter", sans-serif;
+  --font-p: "Oswald", sans-serif;
+  --font-forms: Arial, Helvetica, sans-serif;
 }
 
 html {
-  /* box-shadow: inset 0px 0px 100px 10px #111; */
-  /* box-shadow: inset 0px 0px 100px 10px black; */
+  /* box-shadow: inset 0px 0px 100px 10px var(--color-background); */
+  /* box-shadow: inset 0px 0px 100px 10px var(--color-md-dark); */
 }
 
 body {
-  letter-spacing: 0.05em;
   font-size: 18px;
-  color: white;
+  color: var(--color-foreground);
   padding: 10% 10% 0% 10%;
-  background: #111;
+  background: var(--color-background);
 }
 
 .upper-block {
-  background: black;
+  background: var(--color-md-dark);
   position: fixed;
   top: -2%;
   height: 10.5%;
@@ -41,9 +53,10 @@ body {
 /* Logo */
 .logo {
   position: fixed;
-  top: 0%;
+  top: -1.5%;
   left: 2.5%;
   cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
 .logo:hover {
@@ -80,7 +93,7 @@ body {
 
 /* Navbar */
 .navbar {
-  top: 2%;
+  top: 1.25%;
   position: fixed;
   width: 80%;
 }
@@ -93,18 +106,19 @@ body {
 }
 
 .navbar > ul > li > a {
+  font-family: var(--font-p);
   text-decoration: none;
-  color: white;
+  color: var(--color-foreground);
   padding: 8px 15px;
-  border: 1px solid black;
+  border: 1px solid var(--color-md-dark);
   border-radius: 10%;
 }
 
 .navbar > ul > li > a:active,
 .navbar > ul > li > a:hover {
   text-decoration: none;
-  color: black;
-  background-color: white;
+  color: var(--color-md-dark);
+  background-color: var(--color-foreground);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -121,46 +135,47 @@ body {
 }
 
 .sidebar > ul > li {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .sidebar > ul > li > a {
+  font-family: var(--font-h6);
   text-decoration: none;
-  color: white;
+  color: var(--color-foreground);
   padding: 8px 12px;
-  border: 1px hidden #111;
+  border: 1px hidden var(--color-background);
   border-radius: 10%;
 }
 
 .sidebar > ul > li > a:active,
 .sidebar > ul > li > a:hover {
   text-decoration: none;
-  color: black;
-  background-color: white;
+  color: var(--color-md-dark);
+  background-color: var(--color-foreground);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 /* Dividers */
 .hr-primary {
-  border: 1px solid #888;
+  border: 1px solid var(--color-md-light);
   width: 100%;
 }
 
 .hr-secondary {
-  border: 1px solid #222;
+  border: 1px solid var(--color-secondary);
   width: 100%;
 }
 
 /* Spacer Tabs */
 .tab {
   display: inline-block;
-  margin-left: 10em;
+  margin-left: 200px;
 }
 
 .tab2 {
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .heading-helper {
@@ -171,63 +186,65 @@ body {
 
 /* Typefaces */
 h1 {
-  font-weight: 500;
+  font-family: var(--font-h1);
+  font-size: 2.5em;
 }
 
 h2 {
-  font-weight: 300;
+  font-family: var(--font-h2);
+  font-size: 2em;
 }
 
 h3 {
-  font-weight: 300;
-  color: #333;
+  font-family: var(--font-h3);
+  font-size: 2em;
 }
 
 h4 {
-  font-weight: 300;
+  font-family: var(--font-h4);
+  font-size: 1.5em;
+  font-weight: 400;
   color: grey;
 }
 
 h5 {
+  font-family: var(--font-h5);
   font-weight: 300;
+  font-size: 1.5em;
   color: darkgrey;
 }
 
 h6 {
-  font-weight: Extra-Light 300;
-  color: lightgray;
+  font-family: var(--font-h6);
+  font-size: 1.5em;
+  color: grey;
 }
 
 p {
-  color: white;
-  font-size: 12;
+  font-family: var(--font-p);
+  font-weight: 100;
+  color: var(--color-foreground);
+  font-size: 1em;
 }
 
-#typography {
+#typography > #typography-helper > h1,
+#typography > #typography-helper > h2,
+#typography > #typography-helper > h3 {
+  margin-bottom: -0.5em;
 }
 
-/* Colors */
-#colors {
-  /* --color-background: #111;
-  --color-foreground: white;
-  --color-dark: red;
-  --color-light: blue;
-  --color-md-light: #777;
-  --color-md-dark: #444;
-  --color-primary: green;
-  --color-info: yellow;
-  --color-success: indigo;
-  --color-danger: darkred;
-  --color-warning: brown;
-  --color-lightest: #999; */
+#typography > #typography-helper > h4,
+#typography > #typography-helper > h5,
+#typography > #typography-helper > h6 {
+  margin-bottom: -0.1em;
 }
 
 /* Buttons */
 button {
-  background-color: #111;
-  /* background-color: rgba(88, 80, 236); */
-  color: white;
-  border: 2px solid rgba(88, 80, 236);
+  background-color: var(--color-background);
+  /* background-color: var(--color-primary); */
+  color: var(--color-foreground);
+  border: 2px solid var(--color-primary);
   /* border: none; */
   border-radius: 8%;
   padding: 1em;
@@ -237,9 +254,20 @@ button {
 }
 
 button:hover {
-  background-color: rgba(90, 103, 216);
+  background-color: var(--color-primary2);
   cursor: pointer;
 }
+
+/* Card */
+.card {
+  background-image: none;
+}
+
+/* Colors */
+#colors .color-grid > div {
+  color: var(--color-foreground);
+}
+
 /* Forms */
 form {
   display: flex;
@@ -248,13 +276,13 @@ form {
 
 input,
 textarea {
-  color: white;
-  background-color: #111;
-  border: 2px solid rgba(88, 80, 236);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-primary);
   border-radius: 2%/8%;
   padding: 1em 15em 1em 1em;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-forms);
   font-size: 12px;
 }
 
@@ -292,12 +320,12 @@ form > label > textarea {
 .page-footer > ul > li > a,
 .page-footer > ul > li > p {
   text-decoration: none;
-  color: #777;
+  color: var(--color-footer);
 }
 
 .page-footer > ul > li > a:active,
 .page-footer > ul > li > a:hover {
   text-decoration: none;
-  color: indigo;
+  color: var(--color-primary);
   cursor: pointer;
 }

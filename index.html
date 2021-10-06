@@ -6,7 +6,7 @@
 <!-- Page Wraper -->
 <body>
 	<div class="upper-block"></div>
-	<h1 class="logo">🍔 LOGO</h1>
+	<h3 class="logo">🍔 LOGO</h3>
 
 	<!-- Navbar -->
 	<div class="navbar">
@@ -45,23 +45,31 @@
 		<section id="typography">
 			<h1>Typography</h1>
 			<hr class="hr-primary">
-			<h1><span class=Tab2></span>Playfair Display Black &lt;h1&gt;&lt;/h1&gt;</h1>
-			<h4><span class=Tab2></span>Playfair Display Black &lt;h4&gt;&lt;/h4&gt;</h4>
-			<p><span class=Tab2></span>Almost before we knew it, we had left the ground. &lt;p&gt;&lt;p&gt;</p>
+			<div id="typography-helper">
+				<h1><span class=Tab2></span>Playfair Display Black &lt;h1&gt;&lt;/h1&gt;</h1>
+				<h6><span class=Tab2></span>Inter Extra Light 300 &lt;h6&gt;&lt;/h6&gt;</h6>
+				<p><span class=Tab2></span>Playfair Display Black is for primary categories and as title font. &lt;p&gt;&lt;p&gt;</p>
+			</div>
 			<hr class="hr-secondary">
-			<h2><span class=Tab2></span>Oswald Medium 500 &lt;h2&gt;&lt;/h2&gt;</h2>
-			<h5><span class=Tab2></span>Playfair Display Black &lt;h5&gt;&lt;/h5&gt;</h5>
-			<p><span class=Tab2></span>Almost before we knew it, we had left the ground.</p>
+			<div id="typography-helper">
+				<h2><span class=Tab2></span>Oswald Medium 500 &lt;h2&gt;&lt;/h2&gt;</h2>
+				<h4><span class=Tab2></span>Playfair Display 300 &lt;h4&gt;&lt;/h4&gt;</h4>
+				<p><span class=Tab2></span>Playfair Display 300 is as a Subtitle font under H2 or H3. &lt;p&gt;&lt;p&gt;</p>
+				<p><span class=Tab2></span>Almost before we knew it, we had left the ground.</p>
+			</div>
 			<hr class="hr-secondary">
-			<h3><span class=Tab2></span>Inter Regular 400 &lt;h3&gt;&lt;/h3&gt;</h3>
-			<h6><span class=Tab2></span>Playfair Display Black &lt;h6&gt;&lt;/h6&gt;</h6>
+			<div id="typography-helper">
+				<h3><span class=Tab2></span>Inter Regular 400 &lt;h3&gt;&lt;/h3&gt;</h3>
+				<h5><span class=Tab2></span>Oswald 300 &lt;h5&gt;&lt;/h5&gt;</h5>
+			</div>
+			
 		</section>
 
 		<section id="type">
 			<p><span class=Tab2></span>This is the <strong>strong tag</strong> in a paragraph. <br>
 				<span class=Tab2></span>This is the <em>em tag in a paragraph</em>, elements such <br>
 				<span class=Tab2></span>as &lt;strong&gt; and &lt;em&gt; are inline. Here is an <br>
-				<span class=Tab2></span>example of the <abbr>abbreviation tag.</abbr> You'd use <br>
+				<span class=Tab2></span>example of the abbreviation &lt;abbr&gt; tag: You'd use <br>
 				<span class=Tab2></span>abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
 				and <abbr title="Cascading Stylesheets">CSS</abbr>.
 			</p> <br>
@@ -74,46 +82,45 @@
 			<hr class="hr-primary">
 
 			<div class="heading-helper">
-				
 				<p>&lt;h1&gt;&lt;/h1&gt;</p>
 				<span class="tab"></span> 
-				<h1>h1. Heading</h1>
+				<h1>h1. heading</h1>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;h2&gt;&lt;/h2&gt;</p>
 				<span class="tab"></span> 
-				<h2>h2. Heading</h2>
+				<h2>h2. heading</h2>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;h3&gt;&lt;/h3&gt;</p>
 				<span class="tab"></span> 
-				<h3>h3. Heading</h3>
+				<h3>h3. heading</h3>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;h4&gt;&lt;/h4&gt;</p>
 				<span class="tab"></span> 
-				<h4>h4. Heading</h4>
+				<h4>h4. heading</h4>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;h5&gt;&lt;/h5&gt;</p>
 				<span class="tab"></span> 
-				<h5>h5. Heading</h5>
+				<h5>h5. heading</h5>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;h6&gt;&lt;/h6&gt;</p>
 				<span class="tab"></span> 
-				<h6>h6. Heading</h6>
+				<h6>h6. heading</h6>
 			</div>
 			<hr class="hr-secondary">
 			<div class="heading-helper">
 				<p>&lt;p&gt;&lt;/p&gt;</p>
-				<span class="tab"></span> 
-				<h6>p. Paragraph</h6>
+				<span class="tab"></span>
+				<p>p. paragraph</p>
 			</div>
 
 			<pre>
@@ -166,11 +173,11 @@
 
 				<div style="background-color: var(--color-md-light)">--color-md-light</div>
 
-				<div style="background-color: var(--color-md-dark); color: var(--color-background)">--color-md-dark</div>
+				<div style="background-color: var(--color-md-dark); color: var(--color-foreground)">--color-md-dark</div>
 
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+				<div style="background-color: var(--color-dark); color: var(--color-foreground)">--color-dark</div>
 
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+				<div style="background-color: var(--color-primary); color: var(--color-foreground)">--color-primary</div>
 
 				<pre>
 					<code>*************** add code in this section, swap dark and light values</code>
@@ -184,9 +191,9 @@
 
 				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
 
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
+				<div style="background-color: var(--color-success); color: var(--color-foreground)">--color-success</div>
 
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
+				<div style="background-color: var(--color-danger); color: var(--color-foreground)">--color-danger</div>
 
 				<div style="background-color: var(--color-warning)">--color-callout</div>
 
@@ -224,6 +231,7 @@
 
 			<pre>
 				<code>
+					************ We need buttons for Success, Alert, Dark + Invert
 					&lt;button
 					style=&quot;--weight: bold;
 					--background-color: #f85353;&quot;
@@ -241,12 +249,17 @@
 		<section id="card">
 			<h1>Cards</h1>
 			<hr class="hr-primary">
-			<p>This is your card</p>
-			<p><button>Card</button></p>
+			<card class="card">
+				<button>
+					<h1>🃏</h1>
+					<h2>Title</h2>
+					<p>This is an example card</p>
+				</button>
+			</card>
 			
 			<pre>
 				<code>
-					************************* ADD CODE FOR CARD!
+					************************* ADD CODE FOR CARD!, button -> card. New css
 					&lt;button
 					style=&quot;--weight: bold;
 					--background-color: #f85353;&quot;
