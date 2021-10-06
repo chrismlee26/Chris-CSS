@@ -12,7 +12,7 @@
   --color-info: yellow;
   --color-success: indigo;
   --color-danger: darkred;
-  --color-warning: brown;
+  --color-warning: tomato;
   --color-lightest: #999;
   --color-secondary: #222;
   --color-footer: #777;
@@ -241,11 +241,12 @@ p {
 
 /* Buttons */
 button {
-  background-color: var(--color-background);
-  /* background-color: var(--color-primary); */
-  color: var(--color-foreground);
+  --bg-color: var(--color-background);
+  --fg-color: var(--color-foreground);
+
+  background-color: var(--bg-color);
+  color: var(--fg-color);
   border: 2px solid var(--color-primary);
-  /* border: none; */
   border-radius: 8%;
   padding: 1em;
   font-weight: 400;
@@ -256,6 +257,24 @@ button {
 button:hover {
   background-color: var(--color-primary2);
   cursor: pointer;
+}
+
+button.warning {
+  --fg-color: var(--color-warning);
+}
+
+button.info {
+  --fg-color: var(--color-info);
+}
+
+button.invert {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+button.invert:hover {
+  color: var(--color-background);
+  background-color: var(--color-foreground);
 }
 
 /* Cards */
