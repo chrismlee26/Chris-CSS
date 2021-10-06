@@ -258,13 +258,36 @@ button:hover {
   cursor: pointer;
 }
 
-/* Card */
+/* Cards */
 .card {
-  background-image: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-bottom: 8em;
+  background-color: #151320;
+  box-shadow: 0 0 4px 2px rgba(99, 98, 98, 0.398);
 }
 
-/* Colors */
-#colors .color-grid > div {
+.card > img {
+  width: 15%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: contain;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card > h2 {
+  font-family: var(--font-h2);
+  font-size: 2em;
+  margin-left: 2em;
+  display: block;
+  color: var(--color-foreground);
+}
+
+.card > p {
+  font-family: var(--font-p);
+  font-size: 1em;
+  margin-left: 1.8em;
+  display: block;
   color: var(--color-foreground);
 }
 
